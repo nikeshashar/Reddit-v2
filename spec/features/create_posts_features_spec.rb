@@ -12,7 +12,7 @@ describe 'creating posts' do
 
 	context 'logged in' do 
 		before do
-			nikesh = User.new(email: 'n@n.com', password: '12345678', password_confirmation: '12345678')
+			nikesh = create(:user)
 			login_as nikesh
 		end 
 	end 
