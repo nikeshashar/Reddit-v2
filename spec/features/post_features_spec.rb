@@ -10,7 +10,7 @@ describe 'posts' do
 
 	context 'when there are posts' do 
 		it 'should display the posts' do 
-			post = Post.new(title: 'Post', content: 'Hello')
+			post = Post.create(title: 'Post', content: 'Hello')
 			visit '/posts'
 			expect(page).to have_content 'Hello'
 		end 

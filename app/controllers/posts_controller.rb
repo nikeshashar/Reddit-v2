@@ -10,6 +10,7 @@ class PostsController < ApplicationController
 
 	def create 
 		@post = Post.new(params[:post].permit(:title, :content))
+
 	   	@post.save
 	   	redirect_to '/'
 	end
