@@ -22,11 +22,16 @@ describe 'creating posts' do
 			visit '/posts'
 			click_link 'Add post'
 			post = create(:post)
-
 			click_button 'Create Post'
-
 			expect(page).to have_content 'Hello'
-		
 		end 
+
+		it 'can have a comment' do 
+			visit '/posts'
+			click_link 'Add post'
+			post = create(:post)
+			click_button 'Create Post'
+			expect(page).to have_content 'Comment'
+		end
 	end 
 end 

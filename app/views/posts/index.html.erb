@@ -3,6 +3,8 @@
 	<% @posts.each do |post| %>
 	<h2><%= post.title %></h2>
 	<h2><%= post.content %></h2>
+	<h2><%= post.comment %></h2>
+
 	<% end %>
 <% else %>
 	No posts yet

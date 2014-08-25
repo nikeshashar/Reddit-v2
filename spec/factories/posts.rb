@@ -4,5 +4,6 @@ FactoryGirl.define do
   factory :post do
     title "Post"
     content "Hello"
+    comment "Comment"
   end
 end
